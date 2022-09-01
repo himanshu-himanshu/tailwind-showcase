@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="icon" type="image/x-icon" href="/images/tie.svg" />
+      <title>Showcase</title>
+   </head>
+   <body>
+      <section id="home" class="bg-primary">
+         <!-- NAV -->
+         <nav>
+            <div class="nav-div" id="navDiv">
+               <!-- LOGO -->
+               <div class="hover:cursor-pointer">
+                  <h1 class="font-sacramento text-4xl text-sky-500">Himanshu.</h1>
+               </div>
+               <!-- NAVBAR -->
+               <div class="hidden md:flex">
+                  <ul
+                     class="flex space-x-6 lg:space-x-14 text-md tracking-wider capitalize"
+                     >
+                     <li class="nav-link">
+                        <a href="#">Home</a>
+                     </li>
+                     <li class="nav-link">
+                        <a href="#about">About</a>
+                     </li>
+                     <li class="nav-link">
+                        <a href="#skills">Skills</a>
+                     </li>
+                     <li class="nav-link">
+                        <a href="#projects">Projects</a>
+                     </li>
+                     <li class="nav-link">
+                        <a href="#contact">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+               <!--- HAMBURGER -->
+               <div class="hover:cursor-pointer md:hidden" id="open-hamburger">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                     stroke-width="1.5"
+                     stroke="currentColor"
+                     class="w-8 h-8"
+                     >
+                     <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                  </svg>
+               </div>
+
+               <!-- Mobile Menu -->
+               <div id="nav-menu" class="md:hidden fixed top-0 left-0 h-screen w-full bg-gray-900 z-40 p-2 duration-300">
+                    <!--- HAMBURGER -->
+                    <div class="hover:cursor-pointer md:hidden flex justify-end p-4" id="close-hamburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                          
+                    </div>
+                   <ul class="flex flex-col justify-center w-full h-full items-center space-y-12 text-2xl uppercase tracking-widest -mt-12 ">
+                        <li class="hover:text-pink-500 duration-150" id="m_home"><a href="#">Home</a></li>
+                        <li class="hover:text-pink-500 duration-150" id="m_about"><a href="#about">About</a></li>
+                        <li class="hover:text-pink-500 duration-150 " id="m_skills"><a href="#skills">Skills</a></li>
+                        <li class="hover:text-pink-500 duration-150" id="m_projects"><a href="#projects">Projects</a></li>
+                        <li class="hover:text-pink-500 duration-150 " id="m_contact"><a href="#contact">Contact</a></li>
+                   </ul>
+               </div>
+
+               
+               <!-- Social icons div -->
+               <div class="hidden xl:block fixed top-[35%] left-0 text-gray-200">
+                  <ul>
+                     <li class="social-icon__list">
+                        <a href="#" class="flex items-center"
+                           >Linkedin
+                        <img
+                           src="./images/icons8-linkedin.svg"
+                           alt=""
+                           class="ml-4 h-full"
+                           /></a>
+                     </li>
+                     <li class="social-icon__list">
+                        <a href="#" class="flex items-center"
+                           >Github<img
+                           src="./images/icons8-github.svg"
+                           alt=""
+                           class="ml-4"
+                           /></a>
+                     </li>
+                     <li class="social-icon__list">
+                        <a href="#" class="flex items-center"
+                           >Twitter
+                        <img src="./images/icons8-twitter.svg" alt="" class="ml-4"
+                           /></a>
+                     </li>
+                     <li class="social-icon__list">
+                        <a href="#" class="flex items-center">
+                        Mail
+                        <img src="./images/gmail.svg" alt="" class="ml-4 w-"
+                           /></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="hidden fixed lg:block bottom-[10%] -right-20 author-title font-sacramento tracking-widest text-pink-500 sub-heading">Made With &#10084;</div>
+            </div>
+         </nav>
+
+        
+            <!-- HOMEPAGE -->
+            <div class="w-full h-screen">
+               <div
+                  class="container max-w-5xl mx-auto flex flex-col justify-center h-full px-8 space-y-4"
+                  >
+                  <p class="text-pink-600 text-lg tracking-widest">Hey there, myself</p>
+                  <h1 class="text-gray-200 text-6xl lg:text-7xl">Himanshu</h1>
+                  <h2 class="text-gray-400 text-5xl md:text-6xl lg:text-7xl font-bold">
+                     Front-End Developer
+                  </h2>
+                  <p class="text-gray-500 text-lg md:text-xl max-w-2xl py-4 mb-8">
+                     I have been passionate about Web Development for a long time now,
+                     from learning how web works to coding some simple yet beautiful
+                     websites that makes me smile.
+                  </p>
+                  <div class="flex items-center z-10 relative">
+                     <a href="#projects"> <button class="primary-btn">Discover &rarr;</button></a> 
+                     <!-- Scroll Animation -->
+                     <a href="#about" class="icon-scroll hidden lg:block -z-0 left-0"></a>
+                  </div>
+               </div>
+            </div>
+      </section>
+
+      <main>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="w-full h-screen bg-primary">
+            <!-- Wrapper Div -->
+            <div class="wrapper-div">
+                <!-- Heading -->
+                <div class="heading-div__small">
+                    <h1 class="heading__small">About</h1>
+                </div>
+                <div class="heading-div__large">
+                    <h1 class="heading__large">About</h1>
+                </div>
+                <!-- Content -->
+                <div
+                    class="flex justify-between w-full items-center text-center flex-col space-y-12 px-6 text-gray-400"
+                    >
+                    <div class="relative">
+                        <img
+                            src="./images/pic.jpg"
+                            alt=""
+                            class="h-40 md:h-44 rounded-full"
+                            />
+                        <div class="absolute h-full w-full -top-1 -left-1">
+                            <img src="./images/dots.png" alt="" class="h-20 opacity-20" />
+                        </div>
+                        <div
+                            class="absolute h-full w-full bg-black top-0 rounded-full opacity-20"
+                        ></div>
+                    </div>
+                    <h1 class="text-center text-lg md:text-xl max-w-xl lg:max-w-2xl">
+                        Hi there, myself Himanshu. I am a
+                        <span class="text-sky-500 font-bold">Web developer</span> ,
+                        front-end developer to precise. I have a Bachelor's in Computer
+                        Science and currently enrolled in Mobile App development program
+                        in Canada. Making interactive, beautiful and simple websites is my
+                        farmost concern right now, however, I also want to explore the
+                        world of mobile apps.
+                    </h1>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="w-full h-full lg:h-screen bg-primary">
+            <!-- Wrapper Div -->
+            <div class="wrapper-div">
+                <!-- Heading -->
+                <div class="heading-div__small">
+                    <h1 class="heading__small">Skills</h1>
+                </div>
+                <div class="heading-div__large">
+                    <h1 class="heading__large">Skills</h1>
+                </div>
+                <!-- Content -->
+                <div class="flex flex-col justify-center w-full">
+                    <div class="w-full flex justify-center">
+                        <h1 class="text-lg text-gray-600 p-2">
+                        Below are the some technologies I'm familiar with
+                        </h1>
+                    </div>
+                    <div
+                        class="w-full grid grid-cols-2 md:grid-cols-3 text-gray-400 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 text-center"
+                        >
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img src="./images/html.svg" alt="" class="w-20 mx-auto" />
+                            <p class="my-4 text-lg font-bold tracking-wider">HTML</p>
+                        </div>
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img src="./images/css.svg" alt="" class="w-20 mx-auto" />
+                            <p class="my-4 text-lg font-bold tracking-wider">CSS</p>
+                        </div>
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img
+                                src="./images/javascript.svg"
+                                alt=""
+                                class="w-20 mx-auto"
+                                />
+                            <p class="my-4 text-lg font-bold tracking-wider">JAVASCRIPT</p>
+                        </div>
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img src="./images/react.svg" alt="" class="w-20 mx-auto" />
+                            <p class="my-4 text-lg font-bold tracking-wider">REACT</p>
+                        </div>
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img src="./images/redux.svg" alt="" class="w-20 mx-auto" />
+                            <p class="my-4 text-lg font-bold tracking-wider">REDUX</p>
+                        </div>
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img src="./images/npm.svg" alt="" class="w-20 mx-auto" />
+                            <p class="my-4 text-lg font-bold tracking-wider">NPM</p>
+                        </div>
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img src="./images/github.svg" alt="" class="w-20 mx-auto" />
+                            <p class="my-4 text-lg font-bold tracking-wider">GITHUB</p>
+                        </div>
+                        <div class="shadow-lg duartion-150 p-8">
+                            <img src="./images/tailwind.svg" alt="" class="w-20 mx-auto" />
+                            <p class="my-4 text-lg font-bold tracking-wider">TAILWIND</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Project Section -->
+      <section id="projects">
+        <div class="w-full h-full lg:h-screen bg-primary">
+            <!-- Wrapper Div -->
+            <div class="wrapper-div">
+                <!-- Heading -->
+                <div class="heading-div__small">
+                    <h1 class="heading__small">Work</h1>
+                </div>
+                <div class="heading-div__large">
+                    <h1 class="heading__large">Work</h1>
+                </div>
+                <!-- Content -->
+                <div class="flex flex-col justify-center w-full">
+                <div class="w-full flex justify-center">
+                <h1 class="text-lg text-gray-600 p-2">
+                Some recent work that I've been working on.
+                </h1>
+                </div>
+                <div
+                    class="w-full grid grid-cols-2 md:grid-cols-3 text-gray-400 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 text-center"
+                    >
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img src="./images/html.svg" alt="" class="w-20 mx-auto" />
+                        <p class="my-4 text-lg font-bold tracking-wider">HTML</p>
+                    </div>
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img src="./images/css.svg" alt="" class="w-20 mx-auto" />
+                        <p class="my-4 text-lg font-bold tracking-wider">CSS</p>
+                    </div>
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img
+                            src="./images/javascript.svg"
+                            alt=""
+                            class="w-20 mx-auto"
+                            />
+                        <p class="my-4 text-lg font-bold tracking-wider">JAVASCRIPT</p>
+                    </div>
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img src="./images/react.svg" alt="" class="w-20 mx-auto" />
+                        <p class="my-4 text-lg font-bold tracking-wider">REACT</p>
+                    </div>
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img src="./images/redux.svg" alt="" class="w-20 mx-auto" />
+                        <p class="my-4 text-lg font-bold tracking-wider">REDUX</p>
+                    </div>
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img src="./images/npm.svg" alt="" class="w-20 mx-auto" />
+                        <p class="my-4 text-lg font-bold tracking-wider">NPM</p>
+                    </div>
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img src="./images/github.svg" alt="" class="w-20 mx-auto" />
+                        <p class="my-4 text-lg font-bold tracking-wider">GITHUB</p>
+                    </div>
+                    <div class="shadow-lg duartion-150 p-8">
+                        <img src="./images/tailwind.svg" alt="" class="w-20 mx-auto" />
+                        <p class="my-4 text-lg font-bold tracking-wider">TAILWIND</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="w-full h-full lg:h-screen mb-[100vh] bg-primary z-10">
+            <!-- Wrapper Div -->
+            <div class="wrapper-div">
+                <!-- Heading -->
+                <div class="heading-div__small">
+                    <h1 class="heading__small">Get in Touch</h1>
+                </div>
+                <div class="heading-div__large">
+                    <h1 class="heading__large">Contact</h1>
+                </div>
+                <!-- Content -->
+                <div class="flex flex-col justify-center w-full">
+                    <div class="w-full flex justify-center">
+                        <h1 class="text-lg text-gray-600 p-2 max-w-lg lg:max-w-2xl text-center">
+                        I'm interested in all kind of opportunities which requires web development. If you want to provide some please use the form to alert me.
+                        </h1>
+                    </div>
+                    <div class=" w-full flex justify-center p-8">
+                        <form action="#" class="flex flex-col space-y-6 w-[90%] sm:w-1/2">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <textarea name="message" cols="10" rows="5" placeholder="Message" maxlength="10"></textarea>
+                            <button class="relative primary-btn tracking-widest uppercase">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      </main>
+
+      <footer>
+         <!-- Contact Section  -->
+         <section id="contact">
+            <div class="w-full h-full fixed -z-10 bottom-0 lg:h-screen bg-[#1e1e1e]">
+            <!-- Wrapper Div -->
+            <div class="wrapper-div">
+               <!-- Heading -->
+               <div class="heading-div__small">
+                  <h1 class="heading__small">Footer</h1>
+               </div>
+               <!-- Content -->
+               <div class="flex flex-col justify-center max-w-xl mx-auto">
+                  <div class="w-full flex flex-col justify-center items-center p-4 space-y-8">
+                    <img src="./images/undraw_coding_re_iv62.svg" alt="" class="w-72 lg:w-96">
+                    <h1 class="font-sacramento text-4xl text-gray-500 border-b border-gray-400 pb-4">Coded and designed by Himanshu.</h1>
+                    <p class="text-lg text-gray-400 tracking-widest">&copy;Copyright & All rights reserved @ 2022</p>
+                    <a href="#"> <img src="./images/icons8-launchpad.svg" alt=""  class=""></a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </footer>
+      <script src="./main.js"></script>
+   </body>
+</html>
