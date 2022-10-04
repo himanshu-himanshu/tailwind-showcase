@@ -72,7 +72,7 @@ html {
 }
 
 .heading__large {
-  @apply text-6xl md:text-7xl font-bold tracking-widest border-b-4 border-sky-500 pb-4;
+  @apply text-6xl md:text-7xl font-bold tracking-wide border-b-4 border-sky-500 pb-4;
 }
 
 .heading__small {
@@ -103,7 +103,7 @@ html {
 
 input,
 textarea {
-  @apply bg-gray-900 p-3 tracking-wider text-white active:outline-none active:border-none focus:outline-none focus:border-b border-sky-500 shadow-xl;
+  @apply bg-gray-900 p-3 border-b border-transparent tracking-wider text-white active:outline-none focus:outline-none focus:border-b focus:border-sky-500 shadow-xl;
 }
 
 input::placeholder, textarea::placeholder {
